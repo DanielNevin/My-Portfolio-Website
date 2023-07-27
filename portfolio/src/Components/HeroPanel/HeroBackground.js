@@ -17,7 +17,7 @@ export default function HeroBackground() {
 
 function Stars(props) {
   const ref = useRef()
-  const [points] = useState(() => random.inSphere(new Float32Array(2001), { radius: 1.2 }))
+  const [points] = useState(() => random.inSphere(new Float32Array(5001), { radius: 1 }))
   useFrame((state, delta) => {
     ref.current.rotation.x += delta / 20
     ref.current.rotation.y += delta / 20
@@ -29,7 +29,7 @@ function Stars(props) {
   return (
     <group rotation={[0, 0, Math.PI / 2]}>
       <Points ref={ref} positions={points} stride={3} frustumCulled={false} {...props}>
-        <PointMaterial transparent color="#fde68a" size={0.007} sizeAttenuation={true} depthWrite={false} map={spriteTexture} />
+        <PointMaterial transparent color="#fde68a" size={0.005} sizeAttenuation={true} depthWrite={false} map={spriteTexture} />
       </Points>
     </group>
   )
