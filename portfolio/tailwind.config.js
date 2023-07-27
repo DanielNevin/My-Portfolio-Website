@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        '3xl': '1700px',
+        '4xl': '2048px',
+      },
       transitionTimingFunction: {
         'sweep-up-in': 'cubic-bezier(0, 0, 0.1, 1)',
       },

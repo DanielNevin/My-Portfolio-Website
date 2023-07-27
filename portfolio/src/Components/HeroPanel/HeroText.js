@@ -1,10 +1,48 @@
 import React, { useState, useEffect } from "react";
 import '@fontsource/roboto/300.css';
 import { KeyboardDoubleArrowDown } from "@mui/icons-material";
+import { ChevronRight } from "@mui/icons-material";
+import $ from 'jquery';
 
 export default function HeroText() {
 
   const [animationFlag, setAnimationFlag] = useState(false);
+  const [isAboutHovered, setIsAboutHovered] = useState(false);
+  const [isProjectsHovered, setIsProjectsHovered] = useState(false);
+  const [isContactHovered, setIsContactHovered] = useState(false);
+
+  const handleAboutHover = () => {
+    setIsAboutHovered(true);
+  }
+
+  const handleProjectsHover = () => {
+    setIsProjectsHovered(true);
+  }
+
+  const handleContactsHovered = () => {
+    setIsContactHovered(true);
+  }
+
+  const handleMouseLeave = () => {
+    setIsAboutHovered(false);
+    setIsProjectsHovered(false);
+    setIsContactHovered(false);
+  }
+
+  const scrollToAbout = () => {
+    let about = document.getElementById('about')
+    about?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToProjects = () => {
+    let projects = document.getElementById('projects')
+    projects?.scrollIntoView({ top: -50, behavior: 'smooth' });
+  };
+
+  const scrollToContact = () => {
+    let contact = document.getElementById('contact')
+    contact?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   useEffect(() => {
     // Wait for 4000ms and then set the animationFlag to true
@@ -18,34 +56,54 @@ export default function HeroText() {
 
   return (
     <>
-      <div className="h-screen w-[calc(100%-2.5rem)] flex flex-col items-start justify-center gap-1 text-white text-6xl absolute left-[2.3rem] bottom-10">
-        <span className="animate-heroFirstNameFadeUp ease-out text-orange-500 font-poppins">
-          DANIEL
-        </span>
-        <span className="animate-heroLastNameFadeUp ease-out text-white font-poppins">
-          NEVIN
-        </span>
+      <div className="h-full w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] lg:w-[calc(100%-35rem)] flex flex-col items-start justify-center gap-1 text-white text-6xl md:text-7xl lg:text-8xl xl:text-9xl absolute left-[15%] bottom-10 md:bottom-16 lg:bottom-8">
+        <div className="flex flex-col lg:flex-row lg:gap-4">
+          <span className="animate-heroFirstNameFadeUp ease-out text-orange-500 font-poppins tracking-wide">
+            DAN
+          </span>
+          <span className="animate-heroLastNameFadeUp ease-out text-white font-poppins tracking-wide">
+            NEVIN
+          </span>
+        </div>
       </div>
-      <div className="h-screen w-[calc(100%-2.5rem)] flex items-center justify-start gap-2 text-white text-xl font-poppins font-light absolute left-10 top-12">
-        <span className="animate-heroFrontEndFadeLeft ease-out text-orange-500">
+      <div className="h-full w-[calc(100%-2.5rem)] md:w-[calc(100%-5rem)] lg:w-[calc(100%-35rem)] flex items-center justify-start gap-2 text-white text-xl md:text-3xl lg:text-4xl font-poppins font-light absolute left-[calc(15%+0.3rem)] top-12 md:top-16 lg:top-16">
+        <span className="animate-heroFrontEndFadeLeft ease-out text-orange-500 tracking-wide">
           FRONT END
         </span>
-        <span className="animate-heroDeveloperFadeLeft ease-out text-white">
+        <span className="animate-heroDeveloperFadeLeft ease-out text-white tracking-wide">
           DEVELOPER
         </span>
       </div>
-      <div className="flex w-screen gap-8 text-white items-center justify-center absolute top-16 font-poppins font-light text-sm">
-        <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2600ms]">
-          ABOUT
-        </span>
-        <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2800ms]">
-          PROJECTS
-        </span>
-        <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2800ms]">
-          CONTACT
-        </span>
+      <div className="flex w-full gap-10 text-white items-start justify-end px-[15%] absolute top-16 font-poppins font-light text-sm md:text-lg lg:text-xl lg:gap-20">
+        <div className="flex flex-col gap-2">
+          <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2600ms] lg:hover:text-orange-500 lg:transition-colors" onMouseEnter={handleAboutHover} onMouseLeave={handleMouseLeave} onClick={scrollToAbout}>
+            ABOUT
+          </span>
+          {isAboutHovered &&
+          <div className={ `flex items-center justify-center ${ animationFlag ? "animate-chevronFadeDown" : "opacity-0" }` }>
+            <ChevronRight style={{ color: '#f97316', transform: 'scale(2) rotate(90deg)'}}/>
+          </div> }
+        </div>
+        <div className="flex flex-col gap-2">
+          <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2800ms] lg:hover:text-orange-500 lg:transition-colors" onMouseEnter={handleProjectsHover} onMouseLeave={handleMouseLeave} onClick={scrollToProjects}>
+            PROJECTS
+          </span>
+          {isProjectsHovered &&
+          <div className={ `flex items-center justify-center ${ animationFlag ? "animate-chevronFadeDown" : "opacity-0" }` }>
+            <ChevronRight style={{ color: '#f97316', transform: 'scale(2) rotate(90deg)'}}/>
+          </div> }
+        </div>
+        <div className="flex flex-col gap-2">
+          <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[3000ms] lg:hover:text-orange-500 lg:transition-colors" onMouseEnter={handleContactsHovered} onMouseLeave={handleMouseLeave} onClick={scrollToContact}>
+            CONTACT
+          </span>
+          {isContactHovered &&
+          <div className={ `flex items-center justify-center ${ animationFlag ? "animate-chevronFadeDown" : "opacity-0" }` }>
+            <ChevronRight style={{ color: '#f97316', transform: 'scale(2) rotate(90deg)'}}/>
+          </div> }
+        </div>
       </div>
-      <div className={ `flex w-screen items-center justify-center absolute bottom-20 ${ animationFlag ? "animate-chevronFadeDown" : "opacity-0" }` }>
+      <div className={ `flex w-full items-center justify-center absolute bottom-20 ${ animationFlag ? "animate-chevronFadeDown" : "opacity-0" }` }>
         <KeyboardDoubleArrowDown style={{ color: 'white', transform: 'scale(2)'}}/>
       </div>
 
