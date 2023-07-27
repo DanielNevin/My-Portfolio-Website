@@ -12,8 +12,8 @@ export default function ProjectCard(props) {
         {props.description}
       </p>
       <div className="flex items-center justify-center gap-8 lg:scale-150">
-        <a data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" href={props.githubLink}>
-          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" className="h-8"/>
+        <a data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="" href={props.githubLink}>
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" className="h-8 lg:hover:scale-125"/>
         </a>
         <a data-aos="fade-left" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" href={props.demoLink}>
           <OpenInBrowserIcon style={{transform: "scale(1.3)", color: "black"}} />

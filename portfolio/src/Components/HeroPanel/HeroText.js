@@ -74,7 +74,7 @@ export default function HeroText() {
           DEVELOPER
         </span>
       </div>
-      <div className="flex w-full gap-10 text-white items-start justify-end px-[15%] absolute top-16 font-poppins font-light text-sm md:text-lg lg:text-xl lg:gap-20">
+      <div className="flex w-full gap-10 text-white items-start justify-center lg:justify-end lg:px-[15%] absolute top-16 font-poppins font-light text-sm md:text-lg lg:text-xl lg:gap-20">
         <div className="flex flex-col gap-2">
           <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2600ms] lg:hover:text-orange-500 lg:transition-colors" onMouseEnter={handleAboutHover} onMouseLeave={handleMouseLeave} onClick={scrollToAbout}>
             ABOUT
