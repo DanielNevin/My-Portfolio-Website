@@ -1,6 +1,69 @@
-.HeroLogo {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  border: 2px;
+@keyframes slide-up-progress {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100rem); }
+}
+
+@keyframes slide-up-slow-progress {
+  from { transform: translateY(0); }
+  to { transform: translateY(-30rem); }
+}
+
+@keyframes slide-right-fast-progress {
+  from { transform: translateX(0); }
+  to { transform: translateX(100rem); }
+}
+
+@keyframes slide-down-progress {
+  from { transform: translateY(0); }
+  to { transform: translateY(100rem); }
+}
+
+@keyframes slide-left-slow-progress {
+  from { transform: translateX(0); }
+  to { transform: translateX(-30rem); }
+}
+
+@keyframes slide-down-slow-progress {
+  from { transform: translateY(0); }
+  to { transform: translateY(30rem); }
+}
+
+@keyframes tuck-up-progress {
+  from { transform: translateY(0); }
+  to { transform: translateY(-400rem); }
+}
+
+.slide-up {
+  animation: slide-up-progress auto linear;
+  animation-timeline: scroll();
+}
+
+.slide-up-slow {
+  animation: slide-up-slow-progress auto linear;
+  animation-timeline: scroll();
+}
+
+.slide-down {
+  animation: slide-down-progress auto linear;
+  animation-timeline: scroll();
+}
+
+.slide-left-slow {
+  animation: slide-left-slow-progress auto linear;
+  animation-timeline: scroll();
+}
+
+.slide-right-fast {
+  animation: slide-right-fast-progress auto linear;
+  animation-timeline: scroll();
+}
+
+.slide-down-slow {
+  animation: slide-down-slow-progress auto linear;
+  animation-timeline: scroll();
+}
+
+.tuck-up {
+  animation: tuck-up-progress auto linear;
+  animation-timeline: scroll();
 }

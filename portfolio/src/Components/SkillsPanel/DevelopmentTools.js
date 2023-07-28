@@ -3,13 +3,13 @@ import React, { useState, useEffect } from "react";
 export default function DevelopmentTools() {
 
   return (
-    <div className="h-auto bg-white flex flex-col gap-2 justify-center items-center overflow-x-hidden my-16">
-      <div data-aos="fade-down" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex h-auto w-auto p-2 mb-8 bg-orange-500 items-center justify-center">
-        <h1 className="text-xl lg:text-3xl text-white font-bold tracking-wide">
+    <div className="h-auto w-full bg-white flex flex-col gap-8 justify-center items-center overflow-x-hidden font-inter">
+      <div data-aos="fade-down" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex h-auto w-auto p-2 bg-orange-500 items-center justify-center">
+        <h1 className="text-md xl:text-lg 2xl:text-xl text-white font-bold tracking-wide text-center">
           DEVELOPMENT TOOLS 
         </h1>  
       </div>
-      <div className="grid grid-cols-3 grid-rows-2 gap-8 pt-8 w-full px-10 font-roboto">
+      <div className="grid grid-cols-3 grid-rows-2 gap-8 w-full">
         <div data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex flex-col items-center justify-center gap-2">
           <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git logo" className="h-12"/>
           <span>Git</span>

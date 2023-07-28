@@ -9,6 +9,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
 
+import AboutMe from './Components/AboutPanel/AboutMe';
+
 function App() {
 
   useEffect(() => {
@@ -18,8 +20,8 @@ function App() {
   return (
     <div id='body' className="bg-white overflow-x-hidden">
       <Hero />
-      <div className='bg-white md:mx-36 flex flex-col lg:mx-56 xl:mx-72 2xl:mx-[20rem] 3xl:mx-[25rem] 4xl:mx-[30rem]'>
-        <About />
+      <div className='flex flex-col px-12 gap-16 py-16 md:px-36 md:gap-24 md:py-24 lg:px-56 lg:gap-32 lg:py-32 xl:px-72 2xl:px-[25rem] 3xl:px-[30rem] 4xl:px-[35rem] bg-white'>
+        <AboutMe />
         <PanelSeparator />
         <SkillsPanel />
         <PanelSeparator />

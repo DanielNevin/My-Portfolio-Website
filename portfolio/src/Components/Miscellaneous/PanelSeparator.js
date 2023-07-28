@@ -3,7 +3,7 @@ import React from "react";
 export default function PanelSeparator() {
 
   return(
-    <div className="flex items-center justify-between px-8 h-2 bg-white lg:w-full">
+    <div className="flex items-center justify-between h-2 bg-white lg:w-full">
       <div data-aos="fade-left" data-aos-easing="sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="0" className="w-1 bg-orange-500 h-1 w-1 lg:h-[0.4rem] lg:w-[0.4rem] rounded-full">
         &nbsp;
       </div>
@@ -77,21 +77,6 @@ export default function PanelSeparator() {
         &nbsp;
       </div>
       <div data-aos="fade-left" data-aos-easing="sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="1200" className="w-1 bg-orange-500 h-1 w-1 lg:h-[0.4rem] lg:w-[0.4rem] rounded-full">
-        &nbsp;
-      </div>
-      <div data-aos="fade-left" data-aos-easing="sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="1250" className="w-1 bg-orange-500 h-1 w-1 lg:h-[0.4rem] lg:w-[0.4rem] rounded-full">
-        &nbsp;
-      </div>
-      <div data-aos="fade-left" data-aos-easing="sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="1300" className="w-1 bg-orange-500 h-1 w-1 lg:h-[0.4rem] lg:w-[0.4rem] rounded-full">
-        &nbsp;
-      </div>
-      <div data-aos="fade-left" data-aos-easing="sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="1350" className="w-1 bg-orange-500 h-1 w-1 lg:h-[0.4rem] lg:w-[0.4rem] rounded-full">
-        &nbsp;
-      </div>
-      <div data-aos="fade-left" data-aos-easing="sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="1400" className="w-1 bg-orange-500 h-1 w-1 lg:h-[0.4rem] lg:w-[0.4rem] rounded-full">
-        &nbsp;
-      </div>
-      <div data-aos="fade-left" data-aos-easing="sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="1450" className="w-1 bg-orange-500 h-1 w-1 lg:h-[0.4rem] lg:w-[0.4rem] rounded-full">
         &nbsp;
       </div>
     </div>

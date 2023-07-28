@@ -6,10 +6,13 @@ import Skills from "./Skills";
 export default function SkillsPanel() {
 
   return(
-    <div>
+    <div className="flex flex-col gap-16 md:gap-24 lg:gap-32">
       <Skills />
-      <LanguagesFrameworks />
-      <DevelopmentTools />
+      <div className="flex flex-col xl:grid xl:grid-cols-2 items-center justify-center gap-16 md:gap-24 lg:gap-32 xl:items-start">
+        <LanguagesFrameworks />
+        <DevelopmentTools />
+      </div>
     </div>
+
   )
 }
