@@ -9,7 +9,7 @@ import roundSpriteTexture from '../../Resources/roundSpriteImageAlpha.png'
 
 export default function HeroBackground() {
   return (
-    <Canvas id='canvas' camera={{ position: [0, 0, 1] }} style={{ background: "#18181b" }}>
+    <Canvas id='canvas' camera={{ position: [0, 0, 1] }} style={{ background: "#083344" }}>
       <Stars />
     </Canvas>
   )
@@ -29,7 +29,7 @@ function Stars(props) {
   return (
     <group rotation={[0, 0, Math.PI / 2]}>
       <Points ref={ref} positions={points} stride={3} frustumCulled={false} {...props}>
-        <PointMaterial transparent color="#fde68a" size={0.005} sizeAttenuation={true} depthWrite={false} map={spriteTexture} />
+        <PointMaterial transparent color="#dee6ed" size={0.005} sizeAttenuation={true} depthWrite={false} map={spriteTexture} />
       </Points>
     </group>
   )

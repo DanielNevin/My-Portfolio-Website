@@ -34,9 +34,9 @@ export default function Projects() {
   })
 
   return (
-    <div id="projects" className="h-auto bg-white flex flex-col gap-8 justify-center items-center overflow-x-hidden font-inter">
-      <div data-aos="fade-down" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex h-auto w-auto p-2 bg-orange-500 items-center justify-center">
-        <h1 className="text-xl lg:text-3xl text-white font-bold tracking-wide">
+    <div id="projects" className="h-auto flex flex-col gap-8 justify-center items-center overflow-x-hidden font-inter">
+      <div data-aos="fade-down" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex h-auto w-auto p-2 bg-[#164e63] items-center justify-center px-4 rounded-lg">
+        <h1 className="text-xl lg:text-3xl text-[#f4f0eb] font-bold tracking-wide">
           FEATURED PROJECTS
         </h1>  
       </div>

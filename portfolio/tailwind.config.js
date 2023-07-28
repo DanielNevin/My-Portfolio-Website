@@ -36,8 +36,8 @@ module.exports = {
           '100%': { transform: 'translateY(2rem)', opacity: '0' },
         },
         'fadeInOrange': {
-          '0%': { transform: 'translateY(0rem)', opacity: '0', color: 'white' },
-          '100%': { transform: 'translateY(2rem)', opacity: '1', color: 'orange' },
+          '0%': { transform: 'translateY(0rem)', opacity: '0', color: '#f4f0eb' },
+          '100%': { transform: 'translateY(2rem)', opacity: '1', color: '#d9540d' },
         },
         'heroLogoFadeUp': {
           '0%': { transform: 'translateY(30rem)', opacity: '0' },
@@ -50,28 +50,28 @@ module.exports = {
           '100%': { transform: 'rotate(360deg)', opacity: '0' },
         },
         'heroFirstNameFadeUp': {
-          '0%': { transform: 'translateY(-2rem)', opacity: '0', color: 'white' },
-          '33%': { transform: 'translateY(0rem)', opacity: '1', color: 'white' },
-          '66%': { transform: 'translateY(0rem)', opacity: '1', color: 'white' },
-          '100%': { transform: 'translateY(0rem)', opacity: '1', color: '#ed8936' }
+          '0%': { transform: 'translateY(-2rem)', opacity: '0', color: '#f4f0eb' },
+          '33%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' },
+          '66%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' },
+          '100%': { transform: 'translateY(0rem)', opacity: '1', color: '#f8820d' }
         },
         'heroLastNameFadeUp': {
-          '0%': { transform: 'translateY(2rem)', opacity: '0', color: 'white' },
-          '33%': { transform: 'translateY(0rem)', opacity: '1', color: 'white' },
-          '66%': { transform: 'translateY(0rem)', opacity: '1', color: 'white' },
-          '100%': { transform: 'translateY(0rem)', opacity: '1', color: 'white' }
+          '0%': { transform: 'translateY(2rem)', opacity: '0', color: '#f4f0eb' },
+          '33%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' },
+          '66%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' },
+          '100%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' }
         },
         'heroFrontEndFadeLeft': {
-          '0%': { transform: 'translateX(2rem)', opacity: '0', color: 'white' },
-          '33%': { transform: 'translateX(2rem)', opacity: '0', color: 'white' },
-          '66%': { transform: 'translateX(0rem)', opacity: '1', color: 'white' },
-          '100%': { transform: 'translateX(0rem)', opacity: '1', color: '#ed8936' },
+          '0%': { transform: 'translateX(2rem)', opacity: '0', color: '#f4f0eb' },
+          '33%': { transform: 'translateX(2rem)', opacity: '0', color: '#f4f0eb' },
+          '66%': { transform: 'translateX(0rem)', opacity: '1', color: '#f4f0eb' },
+          '100%': { transform: 'translateX(0rem)', opacity: '1', color: '#f8820d' },
         },
         'heroDeveloperFadeLeft': {
-          '0%': { transform: 'translateX(2rem)', opacity: '0', color: 'white' },
-          '33%': { transform: 'translateX(2rem)', opacity: '0', color: 'white' },
-          '66%': { transform: 'translateX(0rem)', opacity: '1', color: 'white' },
-          '100%': { transform: 'translateX(0rem)', opacity: '1', color: 'white' },
+          '0%': { transform: 'translateX(2rem)', opacity: '0', color: '#f4f0eb' },
+          '33%': { transform: 'translateX(2rem)', opacity: '0', color: '#f4f0eb' },
+          '66%': { transform: 'translateX(0rem)', opacity: '1', color: '#f4f0eb' },
+          '100%': { transform: 'translateX(0rem)', opacity: '1', color: '#f4f0eb' },
         },
       },
       animationDelay: {
