@@ -12,10 +12,10 @@ export default function AboutMe() {
             </h1>  
           </div>
           <p data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-[#0d0a07] text-md font-light leading-7 text-justify md:text-lg md:leading-8 lg:text-xl lg:leading-10">
-            Hi I'm Dan. I’m a Mechanical Design Engineer turned Front End Developer based out of Sydney, Australia. 
-            I love the creative process of developing visually appealing designs and implementing dynamic, interactive user interfaces. 
-            I’m addicted to learning new concepts, technologies, and tools that help me improve as a Web Developer. 
-            Outside of Developing you can find me hitting the gym, drooling over European cars, and experiencing what Sydney has to offer.
+            Hi, I'm Dan, a Mechanical Design Engineer turned Front-End Developer based in Sydney, Australia.
+            I have a passion for the creative process of developing visually appealing designs and implementing dynamic, interactive user interfaces.
+            As a Web Developer, I am addicted to learning new concepts, technologies, and tools that continuously help me improve my skills.
+            Outside of Software Development, you can find me hitting the gym, drooling over European cars, and enjoying the sights and sounds of Sydney.
           </p>
         </div>
       </div>

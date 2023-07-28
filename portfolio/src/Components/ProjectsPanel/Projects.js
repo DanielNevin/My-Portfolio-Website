@@ -23,7 +23,7 @@ export default function Projects() {
       imageSrc: "https://github.com/danielNevin/Odin-Shopping-Cart/raw/main/shopping-cart/src/Resources/Screencaps/shoppingCart.png",
       githubLink: "https://github.com/danielNevin/Odin-Shopping-Cart",
       demoLink: "https://danielNevin.github.io/Odin-Shopping-Cart/",
-      description: "This Web App is my shot at building an interactive Online Merchant Storefront with a functional cart as a submission for The Odin Project's Shopping Cart JavaScript Project. The project was built using React, React-Router, and TailwindCSS."
+      description: "This Web App is my attempt at building an interactive Online Merchant Storefront with a functional cart as a submission for The Odin Project's Shopping Cart JavaScript Project. The project was built using React, React-Router, and TailwindCSS."
     }
   ])
 

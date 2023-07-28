@@ -46,6 +46,21 @@ export default function HeroText() {
     contact?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleAboutClick = () => {
+    scrollToAbout();
+    handleMouseLeave();
+  };
+
+  const handleProjectsClick = () => {
+    scrollToProjects();
+    handleMouseLeave();
+  };
+
+  const handleContactClick = () => {
+    scrollToContact();
+    handleMouseLeave();
+  };
+
   useEffect(() => {
     // Wait for 2600ms and then set the animationFlag to true
     const timeoutId = setTimeout(() => {
@@ -57,10 +72,10 @@ export default function HeroText() {
   }, [])
 
   useEffect(() => {
-    // Wait for 5000ms and then set the animationFlag to true
+    // Wait for 4000ms and then set the animationFlag to true
     const timeoutId = setTimeout(() => {
       setScrollAnimationFlag(true);
-    }, 5000);
+    }, 4000);
 
     // Clean up the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
@@ -91,7 +106,7 @@ export default function HeroText() {
       </div>
       <div className={`flex w-full gap-10 text-[#f4f0eb] items-start justify-center lg:justify-end lg:px-[15%] absolute top-16 font-poppins font-light text-sm md:text-lg lg:text-xl lg:gap-20 ${ scrollAnimationFlag ? "tuck-up" : "" }`}>
         <div className="flex flex-col gap-2">
-          <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2600ms] lg:hover:text-[#f8820d] lg:transition-colors" onMouseEnter={handleAboutHover} onMouseLeave={handleMouseLeave} onClick={scrollToAbout}>
+          <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2600ms] lg:hover:text-[#f8820d] lg:transition-colors" onMouseEnter={handleAboutHover} onMouseLeave={handleMouseLeave} onClick={handleAboutClick}>
             ABOUT
           </span>
           {isAboutHovered &&
@@ -100,7 +115,7 @@ export default function HeroText() {
           </div> }
         </div>
         <div className="flex flex-col gap-2">
-          <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2800ms] lg:hover:text-[#f8820d] lg:transition-colors" onMouseEnter={handleProjectsHover} onMouseLeave={handleMouseLeave} onClick={scrollToProjects}>
+          <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[2800ms] lg:hover:text-[#f8820d] lg:transition-colors" onMouseEnter={handleProjectsHover} onMouseLeave={handleMouseLeave} onClick={handleProjectsClick}>
             PROJECTS
           </span>
           {isProjectsHovered &&
@@ -109,7 +124,7 @@ export default function HeroText() {
           </div> }
         </div>
         <div className="flex flex-col gap-2">
-          <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[3000ms] lg:hover:text-[#f8820d] lg:transition-colors" onMouseEnter={handleContactsHovered} onMouseLeave={handleMouseLeave} onClick={scrollToContact}>
+          <span className="hover:cursor-pointer animate-fade-down animate-duration-1000 animate-delay-[3000ms] lg:hover:text-[#f8820d] lg:transition-colors" onMouseEnter={handleContactsHovered} onMouseLeave={handleMouseLeave} onClick={handleContactClick}>
             CONTACT
           </span>
           {isContactHovered &&

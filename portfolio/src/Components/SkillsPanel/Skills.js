@@ -9,12 +9,12 @@ export default function Skills() {
         </h1>
       </div>
       <div className="flex flex-col gap-4 overflow-x-hidden text-md font-light">
-        <p data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-[#0d0a07] text-md leading-7 text-justify md:text-lg md:leading-8 lg:text-xl lg:leading-10">
-          Honours degree in Mechatronics Engineering where I studied Computer Vision, Autonomous Robotics, and Software Development for Hardware Applications
-          1.5 years of Mechanical Design Engineering experience using industry standard drafting software
-          Fully self taught Front End Web Developer via The Odin Project with a passion for Web Development
-          Currently studying Node.js, Express.js, and MongoDB to extend my skills to the Back-End.
-        </p>
+        <ul data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-[#0d0a07] text-md leading-7 text-justify md:text-lg md:leading-8 lg:text-xl lg:leading-10 list-disc px-4">
+          <li>Honours degree in Mechatronics Engineering with a focus on Computer Vision, Autonomous Robotics, and Software Development for Hardware Applications.</li>
+          <li>1.5 years of experience in Mechanical Design Engineering, utilizing industry-standard Design & Drafting software.</li>
+          <li>Fully self-taught Front-End Web Developer via The Odin Project, passionate about Web Development.</li>
+          <li>Currently expanding my skills to the Back-End by learning Node.js, Express.js, and MongoDB.</li>
+        </ul>
       </div>
     </div>
   )

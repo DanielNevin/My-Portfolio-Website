@@ -3,11 +3,11 @@ import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
 
 export default function ProjectCard(props) {
   return(
-    <div className="flex flex-col gap-4 md:gap-8 items-center justify-center w-full font-inter overflow-y-hidden">
+    <div className="flex flex-col gap-4 md:gap-8 items-center justify-center w-full font-inter overflow-y-hidden py-4">
       <h1 data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-xl lg:text-3xl text-[#164e63] font-bold tracking-wide py-2 px-4">
         {props.title}
       </h1>
-      <img data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="h-72 lg:h-auto lg:w-full object-cover rounded-lg border-2 border-[#f8820d]" src={props.imageSrc} />
+      <img data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="h-72 lg:h-auto lg:w-full object-cover rounded-lg shadow-lg" src={props.imageSrc} />
       <p data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-[#0d0a07] font-light text-md leading-7 text-justify md:text-lg md:leading-8 xl:text-xl xl:leading-10">
         {props.description}
       </p>

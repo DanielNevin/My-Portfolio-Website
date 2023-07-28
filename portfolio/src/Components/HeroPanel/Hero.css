@@ -25,7 +25,7 @@
 
 @keyframes slide-down-slow-progress {
   from { transform: translateY(0); }
-  to { transform: translateY(30rem); }
+  to { transform: translateY(10rem); }
 }
 
 @keyframes tuck-up-progress {
