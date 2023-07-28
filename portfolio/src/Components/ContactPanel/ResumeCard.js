@@ -19,14 +19,14 @@ export default function ResumeCard() {
         <p className="text-center">
           You can contact me at
         </p>
-        <button onClick={() => window.location = 'mailto:dnevin234@gmail.com'}>dnevin234@gmail.com</button>
+        <button className="text-[#164e63] font-bold lg:hover:brightness-75" onClick={() => window.location = 'mailto:dnevin234@gmail.com'}>dnevin234@gmail.com</button>
       </div>
       <div className="flex flex-col items-center justify-center gap-8">
         <p className="text-center">
           Or you can find me on Github and Linkedin
         </p>
         <div className="flex items-center justify-center gap-16">
-          <a href="https://github.com/dnevin234">
+          <a href="https://github.com/danielNevin">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="Github logo" className="h-10" />
           </a>
           <a href="https://www.linkedin.com/in/daniel-nevin/">

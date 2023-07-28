@@ -3,7 +3,7 @@ import '@fontsource/roboto/300.css';
 import { KeyboardDoubleArrowDown } from "@mui/icons-material";
 import { ChevronRight } from "@mui/icons-material";
 import $ from 'jquery';
-import './Hero.css'
+import '../../index'
 
 export default function HeroText() {
 
@@ -75,7 +75,7 @@ export default function HeroText() {
     // Wait for 4000ms and then set the animationFlag to true
     const timeoutId = setTimeout(() => {
       setScrollAnimationFlag(true);
-    }, 4000);
+    }, 3500);
 
     // Clean up the timeout to avoid memory leaks
     return () => clearTimeout(timeoutId);
