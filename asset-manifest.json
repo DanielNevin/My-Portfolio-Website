@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef44e8cb.css",
-    "main.js": "/static/js/main.ede810f0.js",
+    "main.css": "/static/css/main.aa24a9ca.css",
+    "main.js": "/static/js/main.7aaa8a50.js",
     "static/media/Daniel Nevin Resume July 2023.pdf": "/static/media/Daniel Nevin Resume July 2023.48ff0d44b926a333ecda.pdf",
     "static/media/roboto-latin-300-normal.woff2": "/static/media/roboto-latin-300-normal.c48fb6765a9fcb00b330.woff2",
     "static/media/roboto-cyrillic-ext-300-normal.woff2": "/static/media/roboto-cyrillic-ext-300-normal.4777461b144e55145268.woff2",
@@ -18,11 +18,11 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-300-normal.woff": "/static/media/roboto-greek-ext-300-normal.392a45a84c081c4b412d.woff",
     "index.html": "/index.html",
-    "main.ef44e8cb.css.map": "/static/css/main.ef44e8cb.css.map",
-    "main.ede810f0.js.map": "/static/js/main.ede810f0.js.map"
+    "main.aa24a9ca.css.map": "/static/css/main.aa24a9ca.css.map",
+    "main.7aaa8a50.js.map": "/static/js/main.7aaa8a50.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef44e8cb.css",
-    "static/js/main.ede810f0.js"
+    "static/css/main.aa24a9ca.css",
+    "static/js/main.7aaa8a50.js"
   ]
 }
