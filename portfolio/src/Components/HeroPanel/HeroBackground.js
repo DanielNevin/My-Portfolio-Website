@@ -29,7 +29,7 @@ function Stars(props) {
   return (
     <group rotation={[0, 0, Math.PI / 2]}>
       <Points ref={ref} positions={points} stride={3} frustumCulled={false} {...props}>
-        <PointMaterial transparent color="#dee6ed" size={0.005} sizeAttenuation={true} depthWrite={false} map={spriteTexture} />
+        <PointMaterial transparent color="#16b6b6" size={0.005} sizeAttenuation={true} depthWrite={false} map={spriteTexture} />
       </Points>
     </group>
   )

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@splinetool/r3f-spline": "^1.0.2",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.410",
+    "react": "^18.2.0"
+  }
+}

@@ -7,9 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary': '#164e63',
+        'secondary': '#ffffff',
+        'accent': '#4ad3d3',
+        'background': '#ffffff',
+      },
       screens: {
         '3xl': '1700px',
         '4xl': '2048px',
+        '5xl': '2300px',
       },
       transitionTimingFunction: {
         'sweep-up-in': 'cubic-bezier(0, 0, 0.1, 1)',
@@ -36,7 +43,7 @@ module.exports = {
           '100%': { transform: 'translateY(2rem)', opacity: '0' },
         },
         'fadeInOrange': {
-          '0%': { transform: 'translateY(0rem)', opacity: '0', color: '#f4f0eb' },
+          '0%': { transform: 'translateY(0rem)', opacity: '0', color: '#ffffff' },
           '100%': { transform: 'translateY(2rem)', opacity: '1', color: '#d9540d' },
         },
         'heroLogoFadeUp': {
@@ -50,28 +57,28 @@ module.exports = {
           '100%': { transform: 'rotate(360deg)', opacity: '0' },
         },
         'heroFirstNameFadeUp': {
-          '0%': { transform: 'translateY(-2rem)', opacity: '0', color: '#f4f0eb' },
-          '33%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' },
-          '66%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' },
-          '100%': { transform: 'translateY(0rem)', opacity: '1', color: '#f8820d' }
+          '0%': { transform: 'translateY(-2rem)', opacity: '0', color: '#ffffff' },
+          '33%': { transform: 'translateY(0rem)', opacity: '1', color: '#ffffff' },
+          '66%': { transform: 'translateY(0rem)', opacity: '1', color: '#ffffff' },
+          '100%': { transform: 'translateY(0rem)', opacity: '1', color: '#4ad3d3' }
         },
         'heroLastNameFadeUp': {
-          '0%': { transform: 'translateY(2rem)', opacity: '0', color: '#f4f0eb' },
-          '33%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' },
-          '66%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' },
-          '100%': { transform: 'translateY(0rem)', opacity: '1', color: '#f4f0eb' }
+          '0%': { transform: 'translateY(2rem)', opacity: '0', color: '#ffffff' },
+          '33%': { transform: 'translateY(0rem)', opacity: '1', color: '#ffffff' },
+          '66%': { transform: 'translateY(0rem)', opacity: '1', color: '#ffffff' },
+          '100%': { transform: 'translateY(0rem)', opacity: '1', color: '#ffffff' }
         },
         'heroFrontEndFadeLeft': {
-          '0%': { transform: 'translateX(2rem)', opacity: '0', color: '#f4f0eb' },
-          '33%': { transform: 'translateX(2rem)', opacity: '0', color: '#f4f0eb' },
-          '66%': { transform: 'translateX(0rem)', opacity: '1', color: '#f4f0eb' },
-          '100%': { transform: 'translateX(0rem)', opacity: '1', color: '#f8820d' },
+          '0%': { transform: 'translateX(2rem)', opacity: '0', color: '#ffffff' },
+          '33%': { transform: 'translateX(2rem)', opacity: '0', color: '#ffffff' },
+          '66%': { transform: 'translateX(0rem)', opacity: '1', color: '#ffffff' },
+          '100%': { transform: 'translateX(0rem)', opacity: '1', color: '#4ad3d3' },
         },
         'heroDeveloperFadeLeft': {
-          '0%': { transform: 'translateX(2rem)', opacity: '0', color: '#f4f0eb' },
-          '33%': { transform: 'translateX(2rem)', opacity: '0', color: '#f4f0eb' },
-          '66%': { transform: 'translateX(0rem)', opacity: '1', color: '#f4f0eb' },
-          '100%': { transform: 'translateX(0rem)', opacity: '1', color: '#f4f0eb' },
+          '0%': { transform: 'translateX(2rem)', opacity: '0', color: '#ffffff' },
+          '33%': { transform: 'translateX(2rem)', opacity: '0', color: '#ffffff' },
+          '66%': { transform: 'translateX(0rem)', opacity: '1', color: '#ffffff' },
+          '100%': { transform: 'translateX(0rem)', opacity: '1', color: '#ffffff' },
         },
       },
       animationDelay: {
