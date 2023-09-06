@@ -2,15 +2,11 @@ import React, { useRef, useEffect, useState } from 'react';
 import Hero from './Components/HeroPanel/Hero';
 import About from './Components/AboutPanel/About';
 import SkillsPanel from './Components/SkillsPanel/SkillsPanel';
-import Projects from './Components/ProjectsPanel/Projects';
 import ContactPanel from './Components/ContactPanel/ContactPanel';
-import PanelSeparator from './Components/Miscellaneous/PanelSeparator';
 import ProjectCard from './Components/ProjectsPanel/ProjectCard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
-
-import AboutMe from './Components/AboutPanel/AboutMe';
 
 function App() {
 
@@ -54,31 +50,64 @@ function App() {
   return (
     <div id='body' className="bg-slate-100 overflow-x-hidden">
       <Hero />
-      <div className='flex flex-col px-8 gap-8 py-16 md:px-36 lg:px-56 xl:px-64 2xl:px-[22rem] 3xl:px-[30rem] 4xl:px-[35rem] 5xl:px-[50rem]'>
-        <div className='w-full flex justify-center pt-8'>
-          <div data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex h-auto w-min p-2 bg-accent items-center justify-center px-4 rounded-lg headerText">
-            <h1 className="text-xl lg:text-3xl text-center text-background font-bold tracking-wide w-max">
-              ABOUT ME
-            </h1>  
+      <div id="about" className='flex flex-col px-4 xsm:px-8 gap-16 md:gap-48 py-16 md:py-48 md:px-36 lg:px-48 xl:px-65 2xl:px-[20rem] 3xl:px-[27rem] 4xl:px-[35rem] 5xl:px-[45rem]'>
+        <div className='w-full flex flex-col justify-center pt-8'>
+          <div className="flex h-auto w-min py-8 bg-slate-100 items-center justify-center rounded-lg">
+            <h1 data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-4xl lg:text-6xl text-accent font-bold tracking-wider w-max">
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-once="true" data-aos-easing="sine">A</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" data-aos-easing="sine">B</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" data-aos-easing="sine">O</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" data-aos-easing="sine">U</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="400" data-aos-once="true" data-aos-easing="sine">T</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" data-aos-easing="sine">&nbsp;</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" data-aos-easing="sine">&nbsp;</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" data-aos-easing="sine">M</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="600" data-aos-once="true" data-aos-easing="sine">E</span>
+            </h1>
+          </div>
+          <About />
+        </div>
+        <div className='w-full flex flex-col justify-center pt-8'>
+          <div className="flex h-auto w-min py-8 bg-slate-100 items-center justify-center rounded-lg">
+            <h1 data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-4xl lg:text-6xl text-accent font-bold tracking-wider w-max">
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-once="true" data-aos-easing="sine">S</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" data-aos-easing="sine">K</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" data-aos-easing="sine">I</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" data-aos-easing="sine">L</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="400" data-aos-once="true" data-aos-easing="sine">L</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" data-aos-easing="sine">S</span>
+            </h1>
+          </div>
+          <SkillsPanel />
+        </div>
+        <div id='projects' className='w-full flex flex-col justify-center pt-8 pb-36'>
+          <div className="flex flex-col xsm:flex-row h-auto w-min py-8 bg-slate-100 items-center justify-center rounded-lg">
+            <h1 data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-4xl lg:text-6xl text-accent font-bold tracking-wider w-max">
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-once="true" data-aos-easing="sine">F</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" data-aos-easing="sine">E</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="200" data-aos-once="true" data-aos-easing="sine">A</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" data-aos-easing="sine">T</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="400" data-aos-once="true" data-aos-easing="sine">U</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" data-aos-easing="sine">R</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="600" data-aos-once="true" data-aos-easing="sine">E</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" data-aos-easing="sine">D</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" data-aos-easing="sine">&nbsp;</span>
+            </h1>
+            <h1 data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-4xl lg:text-6xl text-accent font-bold tracking-wider w-max">
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="800" data-aos-once="true" data-aos-easing="sine">P</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="900" data-aos-once="true" data-aos-easing="sine">R</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1000" data-aos-once="true" data-aos-easing="sine">O</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1100" data-aos-once="true" data-aos-easing="sine">J</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1200" data-aos-once="true" data-aos-easing="sine">E</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1300" data-aos-once="true" data-aos-easing="sine">C</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1400" data-aos-once="true" data-aos-easing="sine">T</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1500" data-aos-once="true" data-aos-easing="sine">S</span>
+            </h1>
+          </div>
+          <div className='flex flex-col gap-24'>
+            {projectCards}
           </div>
         </div>
-        <About />
-        <div className='w-full flex justify-center pt-8'>
-          <div data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex h-auto w-min p-2 bg-accent items-center justify-center px-4 rounded-lg headerText">
-            <h1 className="text-xl lg:text-3xl text-center text-background font-bold tracking-wide w-max">
-              SKILLS
-            </h1>  
-          </div>
-        </div>
-        <SkillsPanel />
-        <div className='w-full flex justify-center pt-8'>
-          <div data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex h-auto w-min p-2 bg-accent items-center justify-center px-4 rounded-lg headerText">
-            <h1 className="text-xl lg:text-3xl text-center text-background font-bold tracking-wide w-max">
-              FEATURED PROJECTS
-            </h1>  
-          </div>
-        </div>
-        {projectCards}
       </div>
       <ContactPanel />
     </div>

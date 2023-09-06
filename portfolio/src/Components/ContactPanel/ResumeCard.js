@@ -1,9 +1,9 @@
 import React from "react";
-import ResumePDF from '../../Resources/Resume/Daniel Nevin Resume August 2023.pdf'
+import ResumePDF from '../../Resources/Resume/Daniel Nevin Resume September 2023.pdf'
 
 export default function ResumeCard() {
   return(
-    <div className="flex flex-col bg-background items-center justify-center gap-8 px-8 py-16 font-inter font-light rounded-lg text-[#0d0a07] shadow-2xl">
+    <div className="flex flex-col bg-background items-center justify-center gap-8 px-8 py-16 font-inter font-light text-[#0d0a07] shadow-2xl">
       <h1 className="text-3xl font-poppins font-bold tracking-wide text-primary">
         Say Hello!
       </h1>
@@ -11,7 +11,7 @@ export default function ResumeCard() {
         Currently open to new opportunities. For any further information about me or my work feel free to reach out!
       </p>
       <a href={ResumePDF} download='Daniel Nevin Resume' target="_blank">
-        <button className="flex h-12 w-50 p-2 bg-accent border-4 border-accent items-center justify-center text-background font-bold tracking-wide text-xl lg:hover:bg-background lg:hover:border-accent lg:hover:text-accent lg:transition-colors px-6 rounded-lg">
+        <button className="flex h-14 w-60 p-2 bg-gradient-to-br from-accent to-sky-500 items-center justify-center text-background font-bold tracking-wide text-xl lg:hover:from-sky-500 lg:hover:to-primary lg:hover:text-2xl lg:hover:shadow-lg lg:transition-all px-6 rounded-lg">
           VIEW RESUME
         </button>
       </a>

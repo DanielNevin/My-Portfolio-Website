@@ -2,9 +2,9 @@ import React from "react"
 
 export default function LanguagesFrameworks() {
   return(
-    <div data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="h-auto w-full flex flex-col gap-8 justify-center items-center overflow-x-hidden font-inter font-semibold text-[#0d0a07] bg-secondary rounded-2xl p-8 shadow-xl">
-      <div data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex h-auto w-auto p-2 bg-primary items-center justify-center px-4 rounded-lg">
-        <h1 className="text-md xl:text-lg 2xl:text-xl text-background font-bold tracking-wide text-center">
+    <div data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="h-auto w-full flex flex-col gap-8 justify-center items-center overflow-x-hidden font-inter font-semibold text-[#0d0a07] bg-secondary p-8 shadow-xl">
+      <div data-aos="zoom-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="flex h-auto w-auto p-2 bg-primary items-center justify-center px-4">
+        <h1 className="text-md 2xl:text-lg 3xl:text-xl text-background font-bold tracking-wide text-center">
           LANGUAGES & FRAMEWORKS
         </h1>  
       </div>

@@ -73,7 +73,7 @@ export default function HeroText() {
 
   return (
     <>
-      <div className="h-full w-auto flex flex-col items-start justify-center gap-1 text-background text-6xl md:text-7xl lg:text-8xl xl:text-9xl absolute left-[15%] bottom-10 md:bottom-16 lg:bottom-8">
+      <div className="h-full w-auto flex flex-col items-start justify-center gap-1 text-background text-7xl md:text-8xl lg:text-9xl absolute left-[15%] bottom-10 md:bottom-16 lg:bottom-8">
         <div className="flex flex-col lg:flex-row lg:gap-4">
           <span className={`animate-heroFirstNameFadeUp ease-out text-accent font-inter tracking-wide`}>
             DANIEL

@@ -9,16 +9,16 @@ export default function ProjectCard(props) {
 
   useEffect(() => {
     if (props.index % 2) {
-      setAnimationType("fade-left")
-    } else {
       setAnimationType("fade-right")
+    } else {
+      setAnimationType("fade-left")
     }
     AOS.refresh();
   }, [])
 
   return(
-    <div data-aos={`${animationType}`} data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" data-aos-anchor-placement="top-center" className="flex flex-col items-center justify-center w-full font-inter overflow-y-hidden bg-secondary rounded-2xl shadow-xl gap-8 py-8 px-8 md:px-16">
-      <div data-aos="fade-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" data-aos-delay="500" className="flex h-auto w-auto p-2 bg-primary items-center justify-center px-4 rounded-lg">
+    <div data-aos={`${animationType}`} data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" data-aos-anchor-placement="top-center" className="flex flex-col items-center justify-center w-full font-inter overflow-y-hidden bg-secondary shadow-xl gap-8 py-8 px-8 md:px-16">
+      <div data-aos="fade-in" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" data-aos-delay="500" className="flex h-auto w-auto p-2 bg-primary items-center justify-center px-4">
         <h1 className="text-xl lg:text-3xl text-background font-bold tracking-wide">
           {props.title}
         </h1>

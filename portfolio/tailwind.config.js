@@ -14,6 +14,8 @@ module.exports = {
         'background': '#ffffff',
       },
       screens: {
+        'xsm': '480px',
+        'xl': '1200px',
         '3xl': '1700px',
         '4xl': '2048px',
         '5xl': '2300px',
