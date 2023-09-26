@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5132d99.css",
-    "main.js": "/static/js/main.53b1a083.js",
-    "static/media/Daniel Nevin CV.pdf": "/static/media/Daniel Nevin CV.95e7c1ee68617f0b876f.pdf",
+    "main.css": "/static/css/main.ffcb70d8.css",
+    "main.js": "/static/js/main.80f2ceef.js",
+    "static/media/Daniel Nevin Resume.pdf": "/static/media/Daniel Nevin Resume.e1f88b4b41d9f5ce9428.pdf",
     "static/media/roboto-latin-300-normal.woff2": "/static/media/roboto-latin-300-normal.c48fb6765a9fcb00b330.woff2",
     "static/media/roboto-cyrillic-ext-300-normal.woff2": "/static/media/roboto-cyrillic-ext-300-normal.4777461b144e55145268.woff2",
     "static/media/roboto-latin-300-normal.woff": "/static/media/roboto-latin-300-normal.0515ab82dae6923cab85.woff",
@@ -18,11 +18,11 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-300-normal.woff": "/static/media/roboto-greek-ext-300-normal.392a45a84c081c4b412d.woff",
     "index.html": "/index.html",
-    "main.c5132d99.css.map": "/static/css/main.c5132d99.css.map",
-    "main.53b1a083.js.map": "/static/js/main.53b1a083.js.map"
+    "main.ffcb70d8.css.map": "/static/css/main.ffcb70d8.css.map",
+    "main.80f2ceef.js.map": "/static/js/main.80f2ceef.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5132d99.css",
-    "static/js/main.53b1a083.js"
+    "static/css/main.ffcb70d8.css",
+    "static/js/main.80f2ceef.js"
   ]
 }
