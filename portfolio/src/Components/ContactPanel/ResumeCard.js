@@ -1,5 +1,5 @@
 import React from "react";
-import ResumePDF from '../../Resources/Resume/Daniel Nevin CV.pdf'
+import ResumePDF from '../../Resources/Resume/Daniel Nevin Resume.pdf'
 
 export default function ResumeCard() {
   return(
@@ -26,11 +26,11 @@ export default function ResumeCard() {
           Or you can find me on Github and Linkedin
         </p>
         <div className="flex items-center justify-center gap-8">
-          <a className="lg:hover:scale-110 transition-all" href="https://github.com/danielNevin">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="Github logo" className="h-10" />
+          <a className="" href="https://github.com/danielNevin">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="Github logo" className="h-10 lg:hover:scale-110 lg:hover:drop-shadow-lg transition-all" />
           </a>
-          <a className="lg:hover:scale-110 transition-all" href="https://www.linkedin.com/in/daniel-nevin/">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="Linkedin logo" className="h-10" />
+          <a className="" href="https://www.linkedin.com/in/daniel-nevin/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="Linkedin logo" className="h-10 lg:hover:scale-110 lg:hover:drop-shadow-lg transition-all" />
           </a>
         </div>
       </div>

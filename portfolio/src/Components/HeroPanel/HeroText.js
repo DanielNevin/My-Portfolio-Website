@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import '@fontsource/roboto/300.css';
 import { KeyboardDoubleArrowDown } from "@mui/icons-material";
 import { ChevronRight } from "@mui/icons-material";
-import $ from 'jquery';
 import '../../index'
 
 export default function HeroText() {
 
+  // Logic to control animations and styling when various elements are interacted with
   const [animationFlag, setAnimationFlag] = useState(false);
   const [scrollAnimationFlag, setScrollAnimationFlag] = useState(false);
   const [isAboutHovered, setIsAboutHovered] = useState(false);

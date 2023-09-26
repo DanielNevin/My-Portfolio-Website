@@ -8,8 +8,10 @@ import * as THREE from 'three'
 import roundSpriteTexture from '../../Resources/roundSpriteImageAlpha.png'
 
 export default function HeroBackground() {
+
+  // Render the scene using the desired camera position and background hex-color
   return (
-    <Canvas id='canvas' camera={{ position: [0, 0, 1] }} style={{ background: "#083344" }}>
+    <Canvas id='canvas' camera={{ position: [0, 0, 1] }} style={{ background: "#083344" }}>     
       <Stars />
     </Canvas>
   )
@@ -17,15 +19,19 @@ export default function HeroBackground() {
 
 function Stars(props) {
   const ref = useRef()
-  const [points] = useState(() => random.inSphere(new Float32Array(5001), { radius: 1 }))
-  useFrame((state, delta) => {
+  // Generates an array of 5001 random points within a bounding sphere
+  const [points] = useState(() => random.inSphere(new Float32Array(5001), { radius: 1 }))       
+  // Defines the desired rotation of the sphere over the X and Y axes to create an "orbiting" effect
+  useFrame((state, delta) => {                                                                  
     ref.current.rotation.x += delta / 20
     ref.current.rotation.y += delta / 20
   })
 
   const textureLoader = new THREE.TextureLoader();
-  const spriteTexture = textureLoader.load(roundSpriteTexture);
+  // Loads a white circle as the sprite texture to render at the point co-ordinates
+  const spriteTexture = textureLoader.load(roundSpriteTexture);                                 
 
+  // Renders the scene using a given rotation, hex-color for the sprites, sprite size, and the option for size attenuation to apply a 3D effect
   return (
     <group rotation={[0, 0, Math.PI / 2]}>
       <Points ref={ref} positions={points} stride={3} frustumCulled={false} {...props}>

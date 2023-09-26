@@ -10,6 +10,7 @@ import './App.css';
 
 function App() {
 
+  // Array of projects that are rendered via the ProjectCard Component
   const [projects, setProjects] = useState([
     {
       index: 0,
@@ -37,6 +38,7 @@ function App() {
     }
   ])
 
+  // Iterating through the above array to render all the Featured Projects
   const projectCards = projects?.map((project, index) => {
     return(
       <ProjectCard key={index} index={project.index} title={project.title} imageSrc={project.imageSrc} githubLink={project.githubLink} demoLink={project.demoLink} description={project.description} /> 
@@ -48,11 +50,11 @@ function App() {
   }, [])
 
   return (
-    <div id='body' className="bg-slate-100 overflow-x-hidden">
+    <div id='body' className="bg-slate-50 overflow-x-hidden">
       <Hero />
-      <div id="about" className='flex flex-col px-4 xsm:px-8 gap-16 md:gap-48 py-16 md:py-48 md:px-36 lg:px-48 xl:px-65 2xl:px-[20rem] 3xl:px-[27rem] 4xl:px-[35rem] 5xl:px-[45rem]'>
-        <div className='w-full flex flex-col justify-center pt-8'>
-          <div className="flex h-auto w-min py-8 bg-slate-100 items-center justify-center rounded-lg">
+      <div id="about" className='flex flex-col px-8 py-16 gap-16 xsm:px-16 sm:px-24 md:px-36 md:gap-24 md:py-48 lg:px-48 xl:px-65 xl:gap-48 2xl:px-[18rem] 3xl:px-[24rem] 4xl:px-[32rem] 5xl:px-[45rem]'>
+        <div className='w-full flex flex-col justify-center xl:pt-8'>
+          <div className="flex h-auto w-min py-8 items-center justify-center rounded-lg">
             <h1 data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-4xl lg:text-6xl text-accent font-bold tracking-wider w-max">
               <span data-aos="fade-down" data-aos-duration="500" data-aos-once="true" data-aos-easing="sine">A</span>
               <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" data-aos-easing="sine">B</span>
@@ -67,8 +69,8 @@ function App() {
           </div>
           <About />
         </div>
-        <div className='w-full flex flex-col justify-center pt-8'>
-          <div className="flex h-auto w-min py-8 bg-slate-100 items-center justify-center rounded-lg">
+        <div className='w-full flex flex-col justify-center xl:pt-8'>
+          <div className="flex h-auto w-min py-8 items-center justify-center rounded-lg">
             <h1 data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-4xl lg:text-6xl text-accent font-bold tracking-wider w-max">
               <span data-aos="fade-down" data-aos-duration="500" data-aos-once="true" data-aos-easing="sine">S</span>
               <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" data-aos-easing="sine">K</span>
@@ -80,8 +82,8 @@ function App() {
           </div>
           <SkillsPanel />
         </div>
-        <div id='projects' className='w-full flex flex-col justify-center pt-8 pb-36'>
-          <div className="flex flex-col xsm:flex-row h-auto w-min py-8 bg-slate-100 items-center justify-center rounded-lg">
+        <div id='projects' className='w-full flex flex-col justify-center gap-16'>
+          <div className="flex flex-col xsm:flex-row h-auto w-min items-center justify-center rounded-lg">
             <h1 data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-4xl lg:text-6xl text-accent font-bold tracking-wider w-max">
               <span data-aos="fade-down" data-aos-duration="500" data-aos-once="true" data-aos-easing="sine">F</span>
               <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="100" data-aos-once="true" data-aos-easing="sine">E</span>
@@ -104,7 +106,7 @@ function App() {
               <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1500" data-aos-once="true" data-aos-easing="sine">S</span>
             </h1>
           </div>
-          <div className='flex flex-col gap-24'>
+          <div className='flex flex-col gap-16 xl:gap-48'>
             {projectCards}
           </div>
         </div>

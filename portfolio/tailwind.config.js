@@ -7,6 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateRows: {
+        '7': 'repeat(7, minmax(0, 1fr))',
+        '8': 'repeat(8, minmax(0, 1fr))',
+        '9': 'repeat(9, minmax(0, 1fr))',
+      },
       colors: {
         'primary': '#164e63',
         'secondary': '#ffffff',
@@ -32,9 +37,19 @@ module.exports = {
         'heroFirstNameFadeUp': 'heroFirstNameFadeUp 4s',
         'heroLastNameFadeUp': 'heroLastNameFadeUp 4s',
         'heroFrontEndFadeLeft': 'heroFrontEndFadeLeft 4s',
-        'heroDeveloperFadeLeft': 'heroDeveloperFadeLeft 4s'
+        'heroDeveloperFadeLeft': 'heroDeveloperFadeLeft 4s',
+        'logoTextIn': 'logoTextIn 0.5s',
+        'logoTextOut': 'logoTextOut 0.5s',
       },
       keyframes: {
+        'logoTextIn':{
+          '0%': { transform: 'scaleY(0) opacity(0)' },
+          '100%': { transform: 'scaleY(1) opacity(1)' },
+        },
+        'logoTextOut':{
+          '0%': { transform: 'scaleY(1) opacity(1)' },
+          '100%': { transform: 'scaleY(0) opacity(0)' },
+        },
         'sweepUp': {
           '0%': { transform: 'scaleY(0)' },
           '100%': { transform: 'scaleY(1)' },
