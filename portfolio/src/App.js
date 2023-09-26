@@ -78,6 +78,23 @@ function App() {
               <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" data-aos-easing="sine">L</span>
               <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="400" data-aos-once="true" data-aos-easing="sine">L</span>
               <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" data-aos-easing="sine">S</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="500" data-aos-once="true" data-aos-easing="sine">&nbsp;</span>
+            </h1>
+            <h1 data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-4xl lg:text-6xl text-accent font-bold tracking-wider w-max">
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="600" data-aos-once="true" data-aos-easing="sine">&</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="600" data-aos-once="true" data-aos-easing="sine">&nbsp;</span>
+            </h1>
+            <h1 data-aos="fade-right" data-aos-easing="sine" data-aos-duration="1000" data-aos-once="true" className="text-4xl lg:text-6xl text-accent font-bold tracking-wider w-max">
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="700" data-aos-once="true" data-aos-easing="sine">E</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="800" data-aos-once="true" data-aos-easing="sine">X</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="900" data-aos-once="true" data-aos-easing="sine">P</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1000" data-aos-once="true" data-aos-easing="sine">E</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1100" data-aos-once="true" data-aos-easing="sine">R</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1200" data-aos-once="true" data-aos-easing="sine">I</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1300" data-aos-once="true" data-aos-easing="sine">E</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1400" data-aos-once="true" data-aos-easing="sine">N</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1500" data-aos-once="true" data-aos-easing="sine">C</span>
+              <span data-aos="fade-down" data-aos-duration="500" data-aos-delay="1600" data-aos-once="true" data-aos-easing="sine">E</span>
             </h1>
           </div>
           <SkillsPanel />
